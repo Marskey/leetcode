@@ -1,15 +1,15 @@
 #include <vector>
-#include <map>
+#include <unordered_map>
 using namespace  std;
 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<int> result;
-        map<int, int> subNum;
+        unordered_map<int, int> subNum;
         for (int i = 0; i < nums.size(); ++i)
         {
-            map<int, int>::iterator it = subNum.find(nums[i]);
+            unordered_map<int, int>::iterator it = subNum.find(nums[i]);
             if (subNum.end() != it)
             {
                 result.push_back(i);
