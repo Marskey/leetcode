@@ -1,6 +1,8 @@
+#include <iostream>
 #include <vector>
+#include <string>
 #include <unordered_map>
-using namespace  std;
+using namespace std;
 
 class Solution {
 public:
@@ -22,3 +24,10 @@ public:
         return result;
     }
 };
+
+int main ()
+{
+    std::string str("0");
+    //cout << str;
+    return 0;
+}
